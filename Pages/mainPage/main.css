@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.shift-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #f4b400;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "☀️";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  transition: 0.4s;
+}
+
+/* Night Mode */
+input:checked + .slider {
+  background-color: #001f3f;
+}
+
+input:checked + .slider:before {
+  transform: translateX(35px);
+  content: "🌙";
+}
+.main_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    /* background-color: blue;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px; */
+
+}
